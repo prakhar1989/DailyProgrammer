@@ -10,8 +10,7 @@ paired opening and closing characters.
 
 def brackets(a):
     brack_dict = {'(':')','[':']','{':'}','<':'>'}
-    print [brack_dict[i] for i in a if i in '([{<'] 
-    print [i for i in a[::-1] if i in ')]}>']
+    return [brack_dict[i] for i in a if i in '([{<'] == [i for i in a[::-1] if i in ')]}>']
     
 print brackets("()abc[])")
 print brackets("([<{abc123abc}>])")
